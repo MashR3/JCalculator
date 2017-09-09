@@ -8,7 +8,7 @@ if (operation === "a") {
 	var no2 = prompt('Enter Second Number');
 	no1 = parseFloat(no1)
 	no2 = parseFloat(no2)
-	alert ("The sum is " + (no1 + no2) + ("!"))
+	alert ("The sum is " + (no1 + no2) + ("!"));
 
 
 } else if (operation === "s") {
@@ -16,7 +16,7 @@ if (operation === "a") {
 	var no2 = prompt('Enter number to subract');
 	no1 = parseFloat(no1)
 	no2 = parseFloat(no2)
-	alert ("The answer is " + (no1 - no2) "!")
+	alert ("The answer is " + (no1 - no2) + "!");
 
 
 } else if (operation === "d") {
@@ -24,26 +24,29 @@ if (operation === "a") {
 	var no2 = prompt('Enter number to divide by');
 	no1 = parseFloat(no1)
 	no2 = parseFloat(no2)
-	alert ("The answer is " + (no1 / no2) + "!")
+	alert ("The answer is " + (no1 / no2) + "!");
+
+} else if (operation === "m") {
+	var no1 = prompt('Enter First Number');
+	var no2 = prompt('Enter Second Number');
+	no1 = parseFloat(no1)
+	no2 = parseFloat(no2)
+	alert ("The answer is " + (no1 * no2) + "!");
+
+} else if (operation === "ad") {
+	var adop = prompt('Please select an advanced operator:' + '\n ' + '\n [p] to square your number ( x^2 )' + '\n [r] to find the square root')
+
+	if  (adop === "p") {
+	var no1 = prompt('Enter number to be squared');
+	no1 = parseFloat(no1)
+	alert ("The square is " + (no1 ** 2) + "!");
+
+	} else if (adop === "r") {
+	var no1 = prompt('Enter number to be squared');
+	no1 = parseFloat(no1)
+	alert ("The square is " + ( no1) + "!");
 
 
-
-
-} else if (functio === d) {
-  prompt('Enter First Number');
-} else if (functio === m) {
-	prompt('Enter First Number')
-}else {
-  alert('Please select a valid operator!');
-} 
-
-// if (functio = a) {
-// 	alert('wooo');
-// }
-
-// var function = (a || s || d || m || ad);
-
-// if (functio = a|| s || d || m || ad) {
-// 	alert("Please choose a valid operator!") 
-// }
+// } else 
+//   alert('Please select a valid operator!');
 
