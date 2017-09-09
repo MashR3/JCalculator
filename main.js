@@ -1,7 +1,5 @@
 var operation = prompt
-
 var operation = prompt('Welcome to Java Calculator. Please select an operator:' + '\n ' + '\n [a] for Addition'+ '\n [s] for Subtraction' + '\n [d] for Division' + '\n [m] for Multiplication' + '\n [ad] for Advanced Operators');
-
 
 if (operation === "a") {
 	var no1 = prompt('Enter First Number');
@@ -37,16 +35,20 @@ if (operation === "a") {
 	var adop = prompt('Please select an advanced operator:' + '\n ' + '\n [p] to square your number ( x^2 )' + '\n [r] to find the square root')
 
 	if  (adop === "p") {
-	var no1 = prompt('Enter number to be squared');
-	no1 = parseFloat(no1)
-	alert ("The square is " + (no1 ** 2) + "!");
+	var no2 = prompt('Enter number to be squared');
+	no2 = parseFloat(no2)
+	alert ("The square is " + (no2 ** 2) + "!");
+	
 
 	} else if (adop === "r") {
-	var no1 = prompt('Enter number to be squared');
-	no1 = parseFloat(no1)
-	alert ("The square is " + ( no1) + "!");
+	var no2 = prompt('Enter number to find the square root of');
+	no2 = parseFloat(no2)
+	alert ("The square root is " + (Math.sqrt(no2)) + "!");
 
+	} else {
+  	alert('Please select a valid operator!');
+}
 
-// } else 
-//   alert('Please select a valid operator!');
+} else
+alert('Please select a valid operator!');
 
