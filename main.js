@@ -1,4 +1,4 @@
-var operation = prompt('Welcome to Java Calculator. Please select an operator:' + '\n ' + '\n [a] for Addition'+ '\n [s] for Subtraction' + '\n [d] for Division' + '\n [m] for Multiplication' + '\n [ad] for Advanced Operators');
+var operation = prompt('Welcome to Java Calculator. Please select an operator:' + '\n ' + '\n [a] for Addition'+ '\n [s] for Subtraction' + '\n [d] for Division' + '\n [m] for Multiplication' + '\n [ad] for Advanced Operators').toLowerCase();
 
 if (operation === "a") {
 	var no1 = parseFloat(prompt('Enter First Number'));
